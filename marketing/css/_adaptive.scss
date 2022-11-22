@@ -1,0 +1,25 @@
+/*Брейкпоинты (для адаптива)*/
+/*$md1:math.div($maxWidthContainer + $containerPadding, 16) + em; //пк, ноутбуки
+$md2:math.div(991.98, 16) + em; //планшеты
+$md3:math.div(767.98, 16) + em; //телефоны
+$md4:math.div(479.98, 16) + em; //маленькие телефоны
+*/
+
+/*       Базовая не изменяемая часть      */
+/*----------------------------------------*/
+@media(max-width:1140.98px){
+    [class*='__container']{
+        max-width: 970px;
+    }  
+}
+@media(max-width:992.98px){
+    [class*='__container']{
+        max-width: 750px;
+    }  
+}
+@media(max-width:767.98px){
+    [class*='__container']{
+        max-width: none;
+    }  
+}
+/*----------------------------------------*/
