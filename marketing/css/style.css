@@ -271,6 +271,43 @@ body {
       -ms-flex: none;
           flex: none;
 }
+.expertise__graph-items {
+  width: 370px;
+  margin-right: 30px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+.expertise__graph-item {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #1D1D1D;
+  padding-top: 2px;
+  border-top: 2px solid #1D1D1D;
+  position: relative;
+}
+.expertise__graph-item:not(:last-child) {
+  margin-bottom: 28px;
+}
+.expertise__graph-num {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 7px;
+}
+.expertise__graph-num::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -7px;
+  width: 100%;
+  height: 2px;
+  background-color: #F0F0F0;
+}
 .expertise__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -312,43 +349,35 @@ body {
   color: #777777;
 }
 
-.graph {
-  width: 370px;
+.magic {
+  background: #F6F8FA;
+  background-image: url(../img/main/magic/dog.jpg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-bottom: 200px;
 }
-.graph__items {
+.magic__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
-.graph__item {
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 1.82;
-  letter-spacing: 1px;
-  color: #1D1D1D;
-  position: relative;
-  padding-top: 2px;
+.magic__info {
+  max-width: 470px;
+  margin-left: auto;
+  padding: 100px 0 214px;
 }
-.graph__item:not(:last-child) {
-  margin-bottom: 28px;
+.magic__title {
+  margin-bottom: 67px;
 }
-.graph__item::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #1D1D1D;
+.magic__block {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #373A39;
 }
-.graph__num {
-  display: block;
-  position: absolute;
-  right: 0;
+.magic__text:not(:last-child) {
+  margin-bottom: 25px;
 }
 
 /*Брейкпоинты (для адаптива)*/
