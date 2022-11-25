@@ -355,7 +355,6 @@ body {
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: left center;
-  margin-bottom: 200px;
 }
 .magic__container {
   display: -webkit-box;
@@ -365,7 +364,7 @@ body {
 .magic__info {
   max-width: 470px;
   margin-left: auto;
-  padding: 100px 0 214px;
+  padding: 100px 0 190px;
 }
 .magic__title {
   margin-bottom: 67px;
@@ -378,6 +377,191 @@ body {
 }
 .magic__text:not(:last-child) {
   margin-bottom: 25px;
+}
+
+.portfolio {
+  padding-top: 140px;
+  padding-bottom: 165px;
+}
+.portfolio__container {
+  padding-bottom: 103px;
+}
+.portfolio__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 68px;
+}
+.portfolio__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 20px;
+  margin: 0 12.5px;
+}
+.portfolio__item {
+  padding: 0 12.5px;
+}
+.portfolio__link {
+  padding: 0 5px 5px;
+  background: transparent;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 2px;
+  color: #333333;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.portfolio__link:hover {
+  border-bottom: 1px solid #FCBB08;
+}
+.portfolio .mixitup-control-active {
+  border-bottom: 1px solid #FCBB08;
+}
+.portfolio__works {
+  margin-bottom: 50px;
+  -webkit-column-count: 4;
+     -moz-column-count: 4;
+          column-count: 4;
+  -webkit-column-gap: 22px;
+     -moz-column-gap: 22px;
+          column-gap: 22px;
+}
+.portfolio__work {
+  margin-bottom: 22px;
+  position: relative;
+}
+.portfolio__work:hover .portfolio__work-link {
+  opacity: 1;
+}
+.portfolio__img {
+  width: 100%;
+}
+.portfolio__work-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: #FFFFFF;
+  background-color: #4C4A4A;
+  border: 15px solid #7D7C7C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  cursor: pointer;
+}
+.portfolio__btn {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 1.2px;
+  color: #242121;
+  text-transform: uppercase;
+  text-align: center;
+  background: #F6F8FA;
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+.portfolio__blockquote {
+  padding-top: 130px;
+  max-width: 652px;
+  text-align: center;
+  margin: 0 auto;
+}
+.portfolio__blockquote p {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 2;
+  color: #242121;
+  margin-bottom: 50px;
+}
+.portfolio__cite {
+  display: block;
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 2.29;
+  color: #9E9E9E;
+}
+.portfolio__video {
+  position: relative;
+  background: url(../img/main/video/video.jpg) center/cover no-repeat;
+  height: 324px;
+  width: 100%;
+}
+.portfolio__video-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 55px;
+  height: 65px;
+  background: url(../img/main/video/play.svg) center/cover no-repeat;
+}
+.portfolio__nums {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 20px;
+  padding-top: 164px;
+  padding-bottom: 165px;
+}
+.portfolio__num {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  padding: 0 90px;
+  text-align: center;
+}
+.portfolio__number {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.2;
+  color: #242121;
+  margin-bottom: 9px;
+}
+.portfolio__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.357;
+  color: #333333;
+  text-transform: capitalize;
 }
 
 /*Брейкпоинты (для адаптива)*/
