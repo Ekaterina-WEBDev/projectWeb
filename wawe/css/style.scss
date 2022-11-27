@@ -1,0 +1,205 @@
+@import "_mixin.scss";
+@import "_resetStyle.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+//Страница
+$minWidth:320; //минимальнвя ширина страницы
+$maxWidth:1920; //максимальная ширина страницы
+
+$maxWidthContainer:1230; //максимальная ширина контейнера
+$containerPadding:15; //внутринние отступы в контейнере
+
+
+$fontFamily: 'Roboto Condensed', sans-serif;
+$mainColor:#242121; //основной цвет шрифта
+$mainBackGround:#FFFFFF;//основной цвет фона
+$mainSize: 14;
+
+/*---------------------*/
+[class*='__container']{
+    max-width: $maxWidthContainer + px;
+    margin: 0 auto;
+    padding: 0 $containerPadding + px;
+}
+
+/*Для контейнера картинок в карточках - технический класс*/
+[class*='__ibg']{
+    position: relative;
+    /*Для самих картинок в карточках технический класс*/
+    img{
+        position:absolute;
+        top:0; left:0;
+        width: 100%; height: 100%;
+        object-fit: cover;
+    }
+}
+
+/*---------------------*/
+body{
+    font-family: $fontFamily;
+    background-color: $mainBackGround;
+    color: $mainColor;
+    font-size: $mainSize + px;
+}
+
+.main{
+    flex: 1 1 auto;
+}
+
+.title {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.16;
+    letter-spacing: 0.6px;
+    color: #01353E;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+
+    &::after{
+        content: "";
+        position:absolute;
+        top: 15px;
+        right:-50px;
+        width: 48px;
+        height: 85px;
+        background:url(../img/main/icon/line.svg) center/cover no-repeat;
+    }
+}
+
+.header {
+    
+    background: url(../img/main/intro/intro.jpg) center/ cover no-repeat;
+
+    // .header__container
+    &__container {
+    }
+
+    // .header__nav
+    &__nav {
+        padding: 52px 0;
+        background: url(../img/header/icon/logo.svg) top 35px left no-repeat;
+    }
+
+    // .header__items
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        margin: 0 -24.5px;
+        justify-content: center;
+    }
+
+    // .header__item
+    &__item {
+        padding: 0 24.5px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.6px;
+        color: #FFFFFF;
+    }
+
+    // .header__link
+    &__link {
+        transition: all 0.2s;
+        padding: 0 5px 9px;
+
+        &:hover{
+            border-bottom: 1px solid #00B2A0;
+        }
+    }
+
+    // .header__link--active
+    &__link--active {
+        border-bottom: 1px solid #00B2A0;
+    }
+
+    // .header__title
+    &__title{
+        padding-top: 205px;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 200px;
+        line-height: 1.175;
+        letter-spacing: 0.6px;
+        color: #0D302C;
+        text-align: center;
+    }
+
+    // .header__subtitle
+    &__subtitle{
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.6px;
+        color: #000000;
+        margin-bottom: 315px;
+        text-align: center;
+    }
+
+    // .header__btn
+    &__btn{
+        margin-bottom: 92px;
+        display: flex;
+        justify-content: center;
+    }
+
+    // .header__img
+    &__img{
+
+    }
+}
+
+.about {
+    padding: 189px 0 170px;
+
+    // .about__container
+    &__container {
+    }
+
+    // .about__title
+    &__title {
+        margin-bottom: 98px;
+    }
+
+    // .about__items
+    &__items {
+    }
+
+    // .about__item
+    &__item {
+        display: flex;
+        margin: 0 -60px;
+        margin-bottom: 30px;
+    }
+
+    // .about__text
+    &__text {
+        flex: 1 1 50%;
+        padding: 0 60px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.29;
+        letter-spacing: 0.6px;
+        color: #242121;
+    }
+}
+
+
+
+
+
+@import "_adaptive.scss";
