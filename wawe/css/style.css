@@ -426,13 +426,86 @@ body {
   letter-spacing: 0.6px;
   text-transform: uppercase;
   color: #242121;
-  margin-bottom: 147px;
+  margin-bottom: 224px;
   text-align: center;
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+.gallery__blockquote {
+  background: #F8F8F8;
+  padding: 80px 15px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.6px;
+  color: #242121;
+  text-align: center;
+  margin-bottom: 200px;
+}
+.gallery__cite {
+  display: block;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.6px;
+  color: #242121;
+  text-align: right;
+  margin-right: 166px;
+}
+.gallery__video {
+  background: url(../img/main/gallery/video.jpg) center/cover no-repeat;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.gallery__link {
+  cursor: pointer;
+}
+.gallery__nums {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -50px;
+  margin-bottom: 198px;
+  padding: 0 161px;
+}
+.gallery__num {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  padding: 0 50px;
+  text-align: center;
+}
+.gallery__number {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.17;
+  letter-spacing: 0.6px;
+  color: #01353E;
+  margin-bottom: 5px;
+}
+.gallery__desc {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.6px;
+  color: #242121;
 }
 
 /*Брейкпоинты (для адаптива)*/
