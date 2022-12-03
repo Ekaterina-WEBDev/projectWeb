@@ -282,7 +282,6 @@ body{
 
     //.expertise__graph
     &__graph{
-        
         flex: none;
     }
 
@@ -332,7 +331,7 @@ body{
     &__items {
         display: flex;
         flex-wrap: wrap;
-        row-gap: 20px;
+        row-gap: 30px;
         margin: 0 -15px;
     }
 
@@ -631,7 +630,7 @@ body{
     // .news__item
     &__item {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap;       
     }
     
     // .news__link
@@ -648,7 +647,7 @@ body{
         color: #242121;
         text-transform: uppercase;
         margin-bottom: 10px;
-        max-width: 705px;
+        max-width: 705px;     
     }
 
     // .news__description
@@ -869,6 +868,7 @@ body{
 .clients {
     padding-top: 70px;
     padding-bottom: 95px;
+    
     // .clients__container
     &__container {
     }

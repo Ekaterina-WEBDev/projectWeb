@@ -4,7 +4,15 @@ $(function () {
     $('.news__items').slick({
         dots: true,
         prevArrow: '<button type="button" class="slick-prev"> <img src="img/main/arrow-left.svg" alt="arrow left"></button>',
-        nextArrow: '<button type="button" class="slick-next"> <img src="img/main/arrow-right.svg" alt="arrow right"></button>'
+        nextArrow: '<button type="button" class="slick-next"> <img src="img/main/arrow-right.svg" alt="arrow right"></button>',
+        responsive: [
+            {
+                breakpoint: 768.98,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
     });
 
 

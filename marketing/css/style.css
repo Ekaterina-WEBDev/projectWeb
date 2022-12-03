@@ -346,7 +346,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  row-gap: 20px;
+  row-gap: 30px;
   margin: 0 -15px;
 }
 .expertise__item {
@@ -1011,14 +1011,140 @@ $md4:math.div(479.98, 16) + em; //маленькие телефоны
 */
 /*       Базовая не изменяемая часть      */
 /*----------------------------------------*/
-@media (max-width: 1140.98px) {
+@media (max-width: 1400.98px) {
+  .news .slick-next {
+    right: 0;
+  }
+  .news .slick-prev {
+    left: 0;
+  }
+  .news .slick-dots {
+    margin-left: 90px;
+  }
+  .news__item {
+    margin-left: 90px;
+  }
+  .news__title {
+    padding-top: 110px;
+  }
+  .news__description {
+    margin-bottom: 110px;
+  }
+}
+@media (max-width: 1340.98px) {
+  .magic__info {
+    padding: 70px 0;
+  }
+}
+@media (max-width: 1200.98px) {
   [class*=__container] {
     max-width: 970px;
+  }
+  .magic {
+    background-size: 50%;
+  }
+  .magic__info {
+    padding-left: 40px;
+  }
+  .magic__title {
+    font-size: 48px;
+  }
+  .portfolio__nav {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 1100.98px) {
+  .about__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .title {
+    margin-bottom: 40px;
+    font-size: 48px;
+  }
+  .about {
+    padding: 90px 0;
+  }
+  .expertise {
+    padding: 90px 0;
+  }
+  .portfolio {
+    padding: 90px 0;
+  }
+  .portfolio__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio__title {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .team {
+    padding: 90px 0;
+  }
+  .plans {
+    padding: 90px 0;
+  }
+  .clients {
+    padding: 90px 0;
+  }
+  .touch {
+    padding: 90px 0;
+  }
+  .touch__btn {
+    margin-bottom: 0;
+  }
+  .footer {
+    padding: 90px 0;
   }
 }
 @media (max-width: 992.98px) {
   [class*=__container] {
     max-width: 750px;
+  }
+  .expertise__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+  .magic {
+    background-image: none;
+  }
+  .magic__info {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .portfolio__blockquote {
+    padding: 90px 0;
+  }
+  .portfolio__cite {
+    margin-bottom: 0;
+  }
+  .portfolio__nums {
+    padding: 50px 0;
+  }
+  .news__title {
+    font-size: 30px;
+  }
+  .news__items {
+    max-width: 600px;
+    margin-right: 50px;
+  }
+  .clients__items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .touch {
+    background-image: none;
+  }
+  .touch__form {
+    max-width: 100%;
   }
 }
 @media (max-width: 767.98px) {
@@ -1079,6 +1205,57 @@ $md4:math.div(479.98, 16) + em; //маленькие телефоны
   .header__nav--active .header__logo path {
     fill: #FFFFFF;
   }
+  .expertise__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 90px;
+  }
+  .expertise__graph {
+    margin-bottom: 30px;
+  }
+  .expertise__graph-items {
+    width: 100%;
+  }
+  .portfolio__works {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    margin-bottom: 20px;
+  }
+  .news .slick-dots {
+    margin-left: 0;
+  }
+  .news__item {
+    margin-left: 0;
+  }
+  .news__description {
+    margin-bottom: 50px;
+  }
+  .team__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+}
+@media (max-width: 600.98px) {
+  .news__title {
+    font-size: 20px;
+  }
+  .plans__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 517.98px) {
+  .expertise__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 @media (max-width: 450.98px) {
   .intro__title {
@@ -1086,6 +1263,17 @@ $md4:math.div(479.98, 16) + em; //маленькие телефоны
   }
   .intro__subtitle {
     font-size: 12px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .news__title {
+    font-size: 18px;
+  }
+  .team__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
   }
 }
 /*----------------------------------------*/
