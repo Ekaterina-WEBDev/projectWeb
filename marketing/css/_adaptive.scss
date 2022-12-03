@@ -12,14 +12,79 @@ $md4:math.div(479.98, 16) + em; //маленькие телефоны
         max-width: 970px;
     }  
 }
+
 @media(max-width:992.98px){
     [class*='__container']{
         max-width: 750px;
     }  
 }
+
 @media(max-width:767.98px){
     [class*='__container']{
         max-width: none;
     }  
+
+    .header__items{
+        padding-top: 90px;
+        position: absolute;
+        top: 0;
+        bottom: -60px;
+        right: 0;
+        left: 0;
+        background:#242121;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transform: translateY(-130%);
+        transition: all 0.3s;
+    }
+
+    .header__item{
+        color: #FFFFFF;
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+
+    .intro__title{
+        font-size: 50px;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .header__nav--active{
+
+        & .header__items{
+            transform: translateY(0);
+        }
+
+        & .header__burger{
+            background: #FFFFFF;
+            &::after{
+                background: #FFFFFF;
+            }
+    
+            &::before{
+                background: #FFFFFF;
+            }
+        }
+
+        & .header__logo path{
+            fill: #FFFFFF;
+        }
+    }   
+}   
+
+@media(max-width:450.98px){
+    .intro__title{
+        font-size: 35px;
+    }
+
+    .intro__subtitle{
+        font-size: 12px;
+    }
 }
+
 /*----------------------------------------*/
