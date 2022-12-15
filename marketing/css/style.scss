@@ -37,6 +37,7 @@ $mainSize: 14;
 }
 
 /*---------------------*/
+
 body{
     font-family: $fontFamily;
     background-color: $mainBackGround;
@@ -73,9 +74,16 @@ body{
 
 .header {
     padding-bottom: 29px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: $mainBackGround;
+    z-index: 100;
 
     // .header__container
     &__container {
+
     }
 
     // .header__burger  
@@ -111,6 +119,10 @@ body{
             top: -10px;
             left: 0;
         }
+    }
+
+    // .header__inner
+    &__inner{
     }
 
     // .header__nav
@@ -164,7 +176,6 @@ body{
 }
 
 .intro {
-
     font-family: 'Montserrat', sans-serif;
     padding-top: 242px;
     padding-bottom: 62px;
@@ -176,6 +187,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 95px;
     }
 
     // .intro__title
@@ -1050,6 +1062,8 @@ body{
 
     // .footer__btn
     &__btn {
+        display: block;
+        margin: 0 auto;
         margin-bottom: 60px;
         width: 17px;
         height: 9px;

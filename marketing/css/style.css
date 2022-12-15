@@ -124,6 +124,12 @@ body {
 
 .header {
   padding-bottom: 29px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #FFFFFF;
+  z-index: 100;
 }
 .header__burger {
   width: 40px;
@@ -221,6 +227,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 95px;
 }
 .intro__title {
   font-weight: 500;
@@ -986,6 +993,8 @@ body {
   margin-bottom: 57px;
 }
 .footer__btn {
+  display: block;
+  margin: 0 auto;
   margin-bottom: 60px;
   width: 17px;
   height: 9px;
@@ -1099,9 +1108,6 @@ $md4:math.div(479.98, 16) + em; //маленькие телефоны
   .touch__btn {
     margin-bottom: 0;
   }
-  .footer {
-    padding: 90px 0;
-  }
 }
 @media (max-width: 992.98px) {
   [class*=__container] {
@@ -1155,26 +1161,18 @@ $md4:math.div(479.98, 16) + em; //маленькие телефоны
     padding-top: 90px;
     position: absolute;
     top: 0;
-    bottom: -60px;
     right: 0;
     left: 0;
     background: #242121;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-transform: translateY(-130%);
         -ms-transform: translateY(-130%);
             transform: translateY(-130%);
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    display: block;
+    text-align: center;
+    padding-bottom: 50px;
   }
   .header__item {
     color: #FFFFFF;

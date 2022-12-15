@@ -1,4 +1,17 @@
 $(function () {
+
+    /*
+    Плавный скролл до элемента
+    */
+
+    $(".header__items a, .footer__btn").on("click", function (event) {
+        event.preventDefault();
+        let id = $(this).attr('href');
+        let top = $(id).offset().top;
+        $('body,html').animate({ scrollTop: top }, 500);
+    });
+
+
     var mixer = mixitup('.portfolio__works');
 
     $('.news__items').slick({
@@ -15,21 +28,16 @@ $(function () {
         ]
     });
 
-
     /* Бургерное меню */
-    let menu = document.querySelector('.header__burger');
     let nav = document.querySelector('.header__nav');
 
-    menu.addEventListener('click', function () {
-        nav.classList.toggle('header__nav--active');
+    document.addEventListener('click', (event) => {
+        if (event.target.closest('.header__burger') || event.target.closest('.header__item')) {
+            nav.classList.toggle('header__nav--active');
+        }
     })
 
 
-    /*
-        Альтернативная запись кнопки бургера:
-        $('.header__burger').on('click', function(){
-            $('.header__items').toggleClass('header__burger--active');
-        })
-    */
+
 
 })
