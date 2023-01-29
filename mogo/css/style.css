@@ -159,6 +159,9 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   row-gap: 40px;
   margin: 0 -25px;
 }
@@ -292,6 +295,199 @@ body {
 .header__num {
   font-size: 24px;
   font-weight: 700;
+}
+
+.subtitle {
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  color: #333333;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+  padding-bottom: 40px;
+  position: relative;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 60px;
+  height: 3px;
+  background: #f38181;
+}
+
+.about {
+  padding: 90px 0 0;
+}
+.about__subtitle {
+  margin-bottom: 20px;
+}
+.about__title {
+  margin-bottom: 50px;
+}
+.about__text {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  max-width: 950px;
+  margin: 0 auto;
+}
+.about__items {
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.about__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.33%;
+          flex: 0 1 33.33%;
+  background: #000000;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.about__item:hover {
+  background: #95e1d3;
+}
+.about__item:hover .about__block {
+  -webkit-transform: translate(-10px, -10px);
+      -ms-transform: translate(-10px, -10px);
+          transform: translate(-10px, -10px);
+}
+.about__item:hover .about__description {
+  opacity: 1;
+}
+.about__block {
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+.about__description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.937254902)), to(rgba(252, 227, 138, 0.9254901961)));
+  background: -o-linear-gradient(rgba(243, 129, 129, 0.937254902), rgba(252, 227, 138, 0.9254901961));
+  background: linear-gradient(rgba(243, 129, 129, 0.937254902), rgba(252, 227, 138, 0.9254901961));
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  opacity: 0;
+}
+.about__description-name {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  position: relative;
+  padding-top: 40px;
+}
+.about__description-name::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 35px;
+  height: 32px;
+  background: url(../images/main/about/users.svg) center/contain no-repeat;
+}
+.about__ibg {
+  padding: 0px 0px 65% 0px;
+}
+.about__advantages {
+  background: #95e1d3;
+}
+.about__numbers {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+.about__number {
+  padding: 80px 0;
+  font-weight: 700;
+  font-size: 72px;
+  border: 1px solid #b5eae0;
+  border-top: none;
+  border-bottom: none;
+}
+.about__number span {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.services {
+  padding: 100px 0;
+}
+.services__title {
+  margin-bottom: 60px;
+}
+.services__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -20px;
+  row-gap: 80px;
+}
+.services__item {
+  padding: 0 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.33%;
+          flex: 0 1 33.33%;
+}
+.services__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.services__img {
+  max-width: 32px;
+  max-height: 32px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 25px;
+}
+.services__name {
+  font-size: 14px;
+  color: #333333;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background: #e5e5e5;
 }
 
 /*Брейкпоинты (для адаптива)*/
