@@ -3,7 +3,15 @@ $(function () {
         arrows:true, 
         dots:false,
         prevArrow: '<button type="button" class="quote__btn quote__btn-prev"><img src="images/main/whatwedo/leftarrow.svg"></button>',
-        nextArrow: '<button type="button" class="quote__btn quote__btn-next"><img src="images/main/whatwedo/leftarrow.svg"></button>'
+        nextArrow: '<button type="button" class="quote__btn quote__btn-next"><img src="images/main/whatwedo/leftarrow.svg"></button>',
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                arrows: false
+              }
+            }
+          ]
     })
 
     const btn = document.querySelectorAll('.whatwedo__name');
@@ -30,6 +38,13 @@ for (let link of links) {
       block: 'start'
     })
   })
-}
+};
+
+    const burger = document.querySelector('.header__burger');
+    const item = document.querySelector('.header__items');
+
+    burger.addEventListener('click', (event)=>{
+        item.classList.toggle('header__items--active');
+    });
 })
 

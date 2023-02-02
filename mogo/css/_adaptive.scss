@@ -7,19 +7,358 @@ $md4:math.div(479.98, 16) + em; //маленькие телефоны
 
 /*       Базовая не изменяемая часть      */
 /*----------------------------------------*/
-@media(max-width:1140.98px){
+@media(max-width:1200.98px){
     [class*='__container']{
         max-width: 970px;
     }  
+    
+    .up{
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .quote__image{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 15px;
+    }
+
+    .quote__img{
+        padding: 20px;
+    }
 }
+
 @media(max-width:992.98px){
     [class*='__container']{
         max-width: 750px;
-    }  
+    }
+
+    .header__title{
+        font-size: 120px;
+    }
+
+    .header__subtitle{
+        font-size: 62px;
+    }
+
+    .header__items {
+        display: none;
+    }
+
+    .header__items.header__items--active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__burger {
+        display: block;
+    }
+    
+    .quote__block{
+        display: block;
+    }
+    
+    .quote__info{
+        text-align: center;
+    }
+
+    .clients__items{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+
+    .work__text{
+        margin-bottom: 50px;
+    }
+
+    .people__photo{
+        max-width: 85px;
+        max-height: 85px;
+    }
 }
+
 @media(max-width:767.98px){
     [class*='__container']{
         max-width: none;
     }  
+
+    .header__title{
+        font-size: 85px;
+    }
+
+    .header__subtitle{
+        font-size: 52px;
+    }
+
+    .up__img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .about, .services, .time, .work, .blog {
+        padding: 50px 0;
+    }
+
+    .design, .whatwedo{
+        padding-top: 50px;
+    }
+
+    .about__number{
+        padding: 40px 0;
+        font-size: 50px;
+    }
+
+    .design__block{
+        max-width: 400px;
+    }
+
+    .design__img--phone{
+        max-width: 180px;
+    }
+
+    .time__social{
+        width: 45px;
+        height: 45px;
+    }
+
+    .work__items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .work__item--big{
+        grid-row: auto;
+    }
+
+    .people__item{
+        display: block;
+        text-align: center;
+    }
+
+    .people__photo{
+        margin: 0 auto 15px;
+    }
+
+    .people__proffesion::after{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .blog__items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer__container{
+        padding-top: 50px;
+    }
 }
+
+@media(max-width:650px) {
+    .services__item{
+        flex: 0 1 50%;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .whatwedo__text {
+        margin-bottom: 40px;
+    }
+
+    .time__title{
+        margin-bottom: 40px;
+    }
+
+    .time__text{
+        margin-bottom: 40px;
+    }
+
+    .time__socials{
+        display: block;
+    }
+
+    .map__title{
+        left: 40%;
+    }
+}
+
+@media(max-width:600px) {
+    .time__item{
+        flex: 0 1 50%;
+    }
+
+    .time__socials{
+        display: flex;
+    }
+
+    .time__social{
+        width: 52px;
+        height: 52px;
+    }
+}
+
+@media(max-width:500px){
+    .header__title{
+        font-size: 60px;
+    }
+
+    .header__subtitle{
+        font-size: 42px;
+    }
+
+    .header__pugination{
+        display: none;
+    }
+
+    .header__title::after{
+        bottom: -30px;
+    }
+
+    .header__title{
+        margin-bottom: 80px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+        
+    .title {
+        font-size: 22px;
+        padding-bottom: 20px;
+    }
+
+    .about__title{
+        margin-bottom: 30px;
+    }
+
+    .about__items{
+        padding: 50px 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about__numbers{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about__number{
+        font-size: 40px;
+        border: 1px solid #b5eae0;
+    }
+
+    .services__item {
+        flex: 0 1 100%;
+    }
+
+    .design__title{
+        margin-bottom: 30px;
+    }
+
+    .design__block {
+        max-width: 320px;
+    }
+        
+    .design__img--phone {
+        max-width: 140px;
+    }
+
+    .whatwedo__block{
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .whatwedo__photo{
+        margin-bottom: 15px;
+    }
+
+    .quote__text, .quote__author{
+        font-size: 20px;
+    }
+
+    .time__socials{
+        display: block;
+    }
+
+    .time__social{
+        width: 40px;
+        height: 40px;
+    }
+
+    .clients__items{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .people__items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(max-width:400px) {
+
+    .header__title {
+        font-size: 35px;
+    }
+
+    .header__subtitle {
+        font-size: 20px;
+    }
+
+    .header__puginations{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header__more{
+        padding: 10px 20px;
+        border: 2px solid #ffffff;
+    }
+
+    .about__numbers{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about__number{
+        font-size: 20px;
+        padding: 20px 0;
+    }
+
+    .about__number span{
+        font-size: 12px;
+    }
+
+    .design__block {
+        max-width: 220px;
+    }
+    
+    .design__img--phone {
+        max-width: 100px;
+    }
+
+    .time__item{
+        flex: 0 1 100%;
+    }
+
+    .time__socials{
+        display: flex;
+    }
+
+    .time__social{
+        width: 52px;
+        height: 52px;
+    }
+
+    .work__items{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+
+    .blog__items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .map__title{
+        left: 30%;
+    }
+}
+
 /*----------------------------------------*/
