@@ -133,6 +133,11 @@
     .partners__items{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .header__items{
+        font-size: 30px;
+        padding-left: 30%;
+    }
 }
 
 @media(max-width:450px){
