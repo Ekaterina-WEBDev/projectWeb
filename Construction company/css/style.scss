@@ -283,7 +283,7 @@ body{
         display: flex;
         flex-wrap: wrap;
         margin: 0 -15px;
-        row-gap: 30px;
+        row-gap: 50px;
     }
 
     // .project__item
@@ -349,6 +349,7 @@ body{
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+        row-gap: 40px;
     }
 
     // .query__text
@@ -371,6 +372,7 @@ body{
 
     // .query__link
     &__link {
+        display: inline-block;
         background: #FFFFFF;
         font-weight: 500;
         font-size: 14px;
@@ -466,6 +468,7 @@ body{
         grid-template-columns: repeat(4, 1fr);
     }
 
+    // .portfolio__ibg
     &__ibg{
         padding: 0px 0px 85.4% 0px;
     }
@@ -710,6 +713,7 @@ body{
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+        row-gap: 30px;
     }
 
     // .footer__text
