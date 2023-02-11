@@ -3,7 +3,7 @@
 @import "_fonts.scss";
 //@import "_popup.scss";
 //@import "_slick.scss";
- 
+
 //Страница
 $minWidth:320; //минимальнвя ширина страницы
 $maxWidth:1920; //максимальная ширина страницы
@@ -1535,6 +1535,26 @@ body{
         width: 50px;
         height: 50px;
     }
+}
+
+*::-webkit-scrollbar{
+    width: 5px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+*::-webkit-scrollbar-track{
+    background: #e5e5e5;
+}
+
+*::-webkit-slider-thumb{
+    background-color: #e5e5e5;
+    border-radius: 10px;
+}
+
+body{
+    scrollbar-color: red blue;
+    scrollbar-width: 5px;
 }
 
 @import "_adaptive.scss";

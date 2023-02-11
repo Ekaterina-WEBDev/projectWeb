@@ -1,0 +1,16 @@
+@media(max-width:1140.98px){
+    [class*='__container']{
+        max-width: 970px;
+    }  
+}
+@media(max-width:991.98px){
+    [class*='__container']{
+        max-width: 750px;
+    }  
+}
+@media(max-width:767.98px){
+    [class*='__container']{
+        max-width: none;
+    }  
+}
+
