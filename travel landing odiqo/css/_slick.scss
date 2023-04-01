@@ -1,0 +1,122 @@
+/*
+Если слайдер является flex элементом, то flex элементу необходимо указать min-width:0; 
+или flex родителем, или самому слайдеру казать min-width:0; 
+*/
+
+/*Слайдер*/
+.slick-slider{}
+/*Ограничивающая область*/
+.slick-list{
+   overflow: hidden; //скрываем лишнее
+}
+/*Лента слайдов*/
+.slick-track{
+    display: flex; //для того чтобы все слайд выстроились в ряд
+    align-items: flex-start; //необходимо, если нам нужно включить адаптивную высоту слайдов
+    flex-wrap: wrap;
+}
+
+
+/*Слайд*/
+.slick-slide{}
+/*Слайд активный*/
+.slick-slide.slick-active{}
+/*Слайд главный*/
+.slick-slide.slick-current{}
+/*Слайд по центру*/
+.slick-slide.slick-center{}
+
+
+/*Стрелки*/
+.slick-arrow{}
+/*Стрелка влево (назад)*/
+.slick-arrow.slick-prev{}
+/*Стрелка вправо (вперед)*/
+.slick-arrow.slick-next{}
+/*Стрелка не активна*/
+.slick-arrow.slick-disabled{}
+
+
+/*Точки*/
+.slick-dots{}
+.slick-dots li{}
+.slick-dots button{}
+
+
+/*Если на сайте несколько слайдеров, то такие вещи как стрелки, пагинация нужно указать в стилях определенного слайдера*/
+
+/*Наш слайдер*/
+.slider{
+    position: relative;
+    padding: 0 50px;
+    /*Указываем стрелки для конкретно нашего слайдера*/
+    & .slick-arrow{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10; //делаем стрелки выше картинки
+        font-size: 0; //Убираем надписи на кнопках
+        width: 50px;
+        height: 50px;
+
+        &.slick-prev{
+            left: 0;
+
+            background: blue; //сюда вставляем картинку
+        }
+
+        &.slick-next{
+            right: 0;
+            background: green; //сюда вставляем картинку
+        }
+
+        &.slick-disabled{
+            display: none; //если слайды закончились, то убери стрелку
+        }
+    }
+
+    & .slick-dots{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin: 0 50px;
+
+        & li{
+            padding: 0 50px;
+            /*Меняем цвет точки у активного слайда*/
+            &.slick-active button{
+                background: yellow;
+            }
+        }
+
+        & button{
+            font-size: 0; //Убираем надписи в точках
+            width: 40px; //ширина точки
+            height: 40px; //высота точки 
+            background: red; //цвет точки
+            border-radius: 50%; //скругдение углов у точки 
+
+        }
+    }    
+}
+
+.slider__item{
+    text-align: center;
+}
+.slider__img{
+    max-width: 900px;
+    margin-bottom: 120px;
+}
+
+
+
+.slider2 {
+    // .slider2__item
+    &__item {
+        text-align: center;
+    }
+
+    // .slider2__img
+    &__img {
+    }
+}
