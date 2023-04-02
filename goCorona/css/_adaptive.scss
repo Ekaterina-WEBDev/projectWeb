@@ -1,0 +1,224 @@
+@media(max-width:1056.98px){
+
+} 
+
+@media(max-width:991.98px){
+    .menu__item{
+        margin-right: 30px;
+    }
+
+    .header__button{
+        flex-basis: 170px;
+    }
+
+    .header__nav{
+        min-height: 80px;
+    }
+
+    .header__burger{
+        display: block;
+        margin-left: 40px;
+        span{
+            background: #4285F4;
+
+            &::before, &::after{
+                background: #4285F4;
+            }
+        }
+    }
+
+    .menu__items{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        text-align: center;
+        padding: 120px 0 100px;
+        background: #515151;
+        transform: translateY(-100%);
+    }
+
+    .header__logo{
+        flex: 1 1 auto;
+    }
+
+    .menu__link{
+        text-shadow: none;
+    }
+
+    .intro__container::before{
+        display: none;
+    }
+
+    .title{
+        font-size: 34px;
+    }
+
+    .intro__picture{
+        flex: 0 1 40%;
+    }
+
+    .expert__items{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .adventeg__items{
+        margin: 0 -14px;
+        justify-content: center;
+    }
+    .adventeg__item{
+        padding: 0 14px;
+    }
+
+    .adventeg__block{
+        display: none;
+    }
+
+    .adventeg__icon{
+        margin-bottom: 20px;
+        width: 50px;
+        height: 56px;
+    }
+
+    .adventeg__name{
+        font-size: 14px;
+    }
+
+    .adventeg__card{
+        padding: 26px 15px;
+    }
+} 
+
+@media(max-width:767.98px){
+    .stay__container{
+        flex-direction: column;
+    }
+    .stay__picture{
+        order: 2;
+        margin: 0;
+        max-width: 538px;
+    }
+
+    .stay__content{
+        order: 1;
+        text-align: center;
+        max-width: 430px;
+    }
+
+    .stay__picture::after{
+        left: 10px;
+    }
+
+    .stay__block--up{
+        left: -50px;
+    }
+
+    .stay__block--center{
+        right: -50px;
+    }
+
+    .stay__block--down{
+        left: -50px;
+    }
+    .expert__content{
+        display: block;
+        padding: 0;
+        
+    }
+
+    .expert__text{
+        text-align: center;
+        margin: 0 auto 40px;
+    }
+
+    .expert__video{
+        margin: 0 auto;
+    }
+
+    .expert__item{
+        font-size: 25px;
+    }
+
+    .expert__advantages{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+} 
+
+@media(max-width:699.98px){
+    .intro__content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro__info{
+        margin: 0 auto 24px;
+    }
+
+    .intro__picture{
+        max-width: 400px;
+        z-index: 1;
+    }
+
+    .expert__items{
+        flex-direction: column;
+    }
+    .expert__item:not(:last-child){
+        margin-right: 0;
+    }
+
+    .expert{
+        padding-bottom: 50px;
+    }
+
+    .adventeg__card{
+        padding: 36px 25px;
+    }
+
+    .footer__items{
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .footer__item{
+        padding: 0;
+    }
+}
+
+@media(max-width:575.98px){
+    .header__button{
+        flex: 0;
+    }
+
+    .btn--blue{
+        padding: 10px 15px;
+        font-size: 8px;
+    }
+
+    .header__burger{
+        margin-left: 20px;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    
+} 
+
+@media(max-width:479.98px){
+    
+} 
+
+@media(max-width:349.98px){
+    .title{
+        font-size: 28px;
+    }
+
+    .adventeg__block--4{
+        left: -10px;
+        top: -10px;
+    }
+} 
